@@ -37,18 +37,18 @@ This is not just a simulation — it’s a **working prototype** built for real-
 
 ## 🖼️ System Architecture
 
-Traffic_Trade/
-├── input/                  # Input images or videos for testing
-├── output/                 # Outputs with detected vehicles + signal timings
-├── weights/                # YOLOv5 pretrained weights (.pt files)
-├── TD1.py                  # Image input + ESP32 control
-├── TD2.py                  # Live webcam feed integration
-├── TD3.py                  # Video file-based detection
-├── Traffic_Trade.ipynb     # Notebook for combined experiments
-├── FPupdated.ino           # Arduino code for ESP32 signal management
-├── requirements.txt        # Python dependencies
-└── README.md               # Project documentation (this file)
+Traffic_Trade
+├── input/                  # Input images or videos for testing  
+├── output/                 # Outputs with detected vehicles + signal timings  
+├── weights/                # YOLOv5 pretrained weights (.pt files)  
+├── TD1.py                  # Image input + ESP32 control  
+├── TD2.py                  # Live webcam feed integration  
+├── TD3.py                  # Video file-based detection  
+├── Traffic_Trade.ipynb     # Notebook for combined experiments  
+├── FPupdated.ino           # Arduino code for ESP32 signal management   
+├── requirements.txt        # Python dependencies   
+└── README.md               # Project documentation (this file)   
 
 ## Developers 
-[GAURAV TATPATE](https://github.com/Gaurav-Gt01)
+[GAURAV TATPATE](https://github.com/Gaurav-Gt01)    
 [KUSHAL BHAN ](https://github.com/kushalb005)
