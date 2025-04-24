@@ -1,50 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body>
+<h1 align="center">🚦 Traffic_Trade 🚀</h1>
+<h3 align="center">An AI-Powered Smart Traffic Signal Management System Using YOLOv5 + ESP32</h3>
 
-  <h1>Traffic_Trade</h1>
-  <p><strong>Traffic_Trade</strong> is a hybrid computer vision and embedded systems project designed to automate traffic signal control using real-time vehicle detection. It combines computer vision with Arduino-driven traffic light control to simulate adaptive traffic systems.</p>
+<p align="center">
+  <img src="https://img.shields.io/github/stars/Gaurav-Gt01/Traffic_Trade?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/forks/Gaurav-Gt01/Traffic_Trade?style=social" alt="Forks">
+  <img src="https://img.shields.io/github/repo-size/Gaurav-Gt01/Traffic_Trade" alt="Repo Size">
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome">
+</p>
 
-  <h2>Notable Techniques</h2>
-  <ul>
-    <li><strong>Object Detection</strong>: Vehicle detection is utilizing PyTorch under the hood for efficient inference on both images and videos.</li>
-    <li><strong>Serial Communication</strong>: Uses pyserial to send signal durations to Arduino.</li>
-    <li><strong>Video Frame Annotation</strong>: Uses OpenCV to overlay bounding boxes and labels.</li>
-    <li><strong>Machine Learning</strong>: Trained a custom YOLO model using vehicle datasets for inference.</li>
-    <li><strong>CSV Logging</strong>: Detection results are written to CSV files for analysis or training reuse.</li>
-    <li><strong>Multipoint Input Abstraction</strong>: Handles static images (<code>td1.py</code>), live webcam (<code>td2.py</code>), and video files (<code>td3.py</code>).</li>
-  </ul>
+<p align="center">
+  <b>A fusion of Artificial Intelligence, IoT, and Embedded Systems to make urban traffic smarter, faster, and future-ready.</b><br/>
+  <i>Built with ❤️ at VJTI by Gaurav Tatpate</i>
+</p>
 
-  <h2>Libraries & Tools</h2>
-  <ul>
-    <li>Ultralytics YOLOv5 – For vehicle detection.</li>
-    <li>OpenCV – Frame processing and annotations.</li>
-    <li>PySerial – Communicates with Arduino via USB.</li>
-    <li>Arduino IDE – Uploads .ino file to microcontroller.</li>
-  </ul>
+---
 
-  <h2>Project Structure</h2>
-  <pre>
+## 🧠 About the Project
+
+Urban traffic systems today still rely on **fixed-timer-based signals** that often create unnecessary congestion and delay. **Traffic_Trade** changes this by introducing:
+
+> 🎯 A **YOLOv5-based real-time vehicle detection system** combined with an **ESP32-controlled traffic signal unit** that intelligently adjusts green signal durations based on actual vehicle count.
+
+This is not just a simulation — it’s a **working prototype** built for real-world feasibility using **Computer Vision**, **Microcontrollers**, and a clean, modular **Python + Arduino** architecture.
+
+---
+
+## 💡 Key Highlights
+
+✨ Real-time car & truck detection using **YOLOv5**  
+🚥 Smart traffic light timing based on **vehicle density (10s–60s)**  
+💡 Visual simulation using **ESP32 & LEDs on a breadboard**  
+🔌 Plug & play logic for **video, image & webcam input**  
+📈 Future-scope ready with options for **live camera feeds**, **cloud logging**, and **emergency vehicle detection**
+
+---
+
+## 🖼️ System Architecture
+
 Traffic_Trade/
-─ td1.py
-─ td2.py
-─ td3.py
-─ FPupdated.ino
-─ Videos/
-─ output/
-─ Traffic Trade/
-─ README.md
-  </pre>
+├── input/                  # Input images or videos for testing
+├── output/                 # Outputs with detected vehicles + signal timings
+├── weights/                # YOLOv5 pretrained weights (.pt files)
+├── TD1.py                  # Image input + ESP32 control
+├── TD2.py                  # Live webcam feed integration
+├── TD3.py                  # Video file-based detection
+├── Traffic_Trade.ipynb     # Notebook for combined experiments
+├── FPupdated.ino           # Arduino code for ESP32 signal management
+├── requirements.txt        # Python dependencies
+└── README.md               # Project documentation (this file)
 
-  <ul>
-    <li><strong>Videos/</strong> – Input videos for demonstration</li>
-    <li><strong>output/</strong> – Annotated output images and video exports</li>
-    <li><strong>Traffic Trade/</strong> – Contains trained ML model files</li>
-  </ul>
-
-</body>
-</html>
+## Developers 
+[GAURAV TATPATE](https://github.com/Gaurav-Gt01)
+[KUSHAL BHAN ](https://github.com/kushalb005)
